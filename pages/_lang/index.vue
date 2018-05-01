@@ -1,9 +1,13 @@
 <template>
   <div class="Content">
-    <div class="container">
-      <h1 class="Content__Title">{{ $t('home.title') }}</h1>
-      <p>{{ $t('home.introduction') }}</p>
-    </div>
+    <b-container>
+      <b-row>
+        <b-col>
+          <h1 class="Content__Title">{{ $t('home.title') }}</h1>
+          <p>{{ $t('home.introduction') }}</p>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 

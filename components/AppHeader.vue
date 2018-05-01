@@ -1,13 +1,18 @@
 <template>
   <header>
-    <nav-bar></nav-bar>
+    <b-container>
+      <b-row>
+        <b-col>
+          <nav-bar></nav-bar>
+        </b-col>
+      </b-row>
+    </b-container>
   </header>
 </template>
 
 <style scoped>
   header {
-    background-color: gray;
-    height: 120px;
+    background-color:#17a2b8;
   }
 </style>
 <script>
