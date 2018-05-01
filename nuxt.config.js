@@ -39,8 +39,6 @@ module.exports = {
   router: {              // customize nuxt.js router (vue-router).
     middleware: 'i18n'   // middleware all pages of the application
   },
-  plugins: ['~/plugins/i18n.js'],
-  generate: {
-    routes: ['/en', '/en/news', '/es', '/es/news']
-  }
+  plugins: ['~/plugins/i18n.js']
+
 }

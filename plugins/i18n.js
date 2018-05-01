@@ -17,10 +17,12 @@ export default ({ app, store }) => {
   })
 
   app.i18n.path = (link) => {
-    // if (app.i18n.locale === app.i18n.fallbackLocale) {
-    //   return `/${link}`
-    // }
+    let p = link
+    console.log(p)
+    if (!(p.indexOf('/en') === 0) && !(p.indexOf('/es') === 0)) {
+      p = '/'+app.i18n.locale+'/'+link
+    }
 
-    return `/${app.i18n.locale}/${link}`
+    return p
   }
 }
