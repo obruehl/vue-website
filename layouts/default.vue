@@ -1,8 +1,19 @@
 <template>
   <div>
+    <app-header/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+  import AppHeader from '~/components/AppHeader.vue'
+
+  export default {
+    components: {
+      AppHeader
+    }
+  }
+</script>
 
 <style>
 html {
@@ -48,5 +59,27 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.page-enter-active,
+.page-leave-active,
+.page-enter-active::before,
+.page-enter-active::after,
+.page-leave-active::before,
+.page-leave-active::after {
+  transition: transform 650ms cubic-bezier(.17,.67,.54,.98);
+}
+
+.page-leave {
+  transform: translate3d(0, 0, 0);
+}
+.page-leave-to {
+  transform: translate3d(100vw, 0, 0);
+}
+.page-enter {
+  transform: translate3d(-100vw, 0, 0);
+}
+.page-enter-to {
+  transform: translate3d(0, 0, 0);
 }
 </style>

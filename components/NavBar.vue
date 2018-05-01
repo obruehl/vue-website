@@ -12,5 +12,7 @@
 </template>
 
 <style>
-
+  .nuxt-link-exact-active {
+    font-weight: bold;
+  }
 </style>
