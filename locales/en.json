@@ -1,0 +1,13 @@
+{
+  "links": {
+    "home": "Homepage"
+  },
+  "home": {
+    "title": "Welcome",
+    "introduction": "this is a test page"
+  },
+  "news": {
+    "title": "News",
+    "introduction": "Latest news"
+  }
+}

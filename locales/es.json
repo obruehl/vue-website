@@ -1,0 +1,13 @@
+{
+  "links": {
+    "home": "Página inicial"
+  },
+  "home": {
+    "title": "Bienvenido",
+    "introduction": "Esta es una página de prueba"
+  },
+  "news": {
+    "title": "Noticias",
+    "introduction": "Últimas noticias"
+  }
+}
