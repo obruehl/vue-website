@@ -67,19 +67,15 @@ html {
 .page-enter-active::after,
 .page-leave-active::before,
 .page-leave-active::after {
-  transition: transform 650ms cubic-bezier(.17,.67,.54,.98);
+  transition: opacity 650ms cubic-bezier(.17,.67,.54,.98);
 }
 
-.page-leave {
-  transform: translate3d(0, 0, 0);
-}
-.page-leave-to {
-  transform: translate3d(100vw, 0, 0);
-}
+.page-leave-to,
 .page-enter {
-  transform: translate3d(-100vw, 0, 0);
+  opacity: 0;
 }
+.page-leave,
 .page-enter-to {
-  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 </style>
